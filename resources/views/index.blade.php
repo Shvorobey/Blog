@@ -1,9 +1,9 @@
 @extends ('layout')
 
-@section('title', 'Главная')
+@section('title', 'Блог - Главная')
 @section('content')
     <div class="col-md-8">
-    <h1 class="my-4">Добро пожаловать <br>
+    <h1 class="my-4" style="color:#C71585" >Добро пожаловать <br>
         <small>Пожалуй, самый лучший в мире блог</small>
     </h1>
 
@@ -14,7 +14,7 @@
             <div class="card mb-4">
                    <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
                    <div class="card-body">
-                       <h2 class="card-title">{{$post->title}}</h2>
+                       <h2 class="card-title" style="color:#008000">{{$post->title}}</h2>
                        <p class="card-text">{{$post->body}}</p>
                        <a href="#" class="btn btn-primary">Читать дальше &rarr;</a>
                    </div>

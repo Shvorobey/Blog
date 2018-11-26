@@ -3,7 +3,9 @@
 @section('title', 'Посты категории')
 @section('content')
     <div class="col-md-8">
-        <h1 class="my-4">Все посты категории {{$category->categories}}
+        <h1 class="my-4" style="color:#800080">Все посты категории <u style="color:#ff0000"> {{$category->categories}} </u>
+
+
 
         </h1>
 

@@ -1,6 +1,6 @@
 @extends ('layout')
 
-@section('title', 'О нас')
+@section('title', 'Блог - О нас')
 @section('content')
     <h1 class="my-4">О нас <br> <hr>
 
