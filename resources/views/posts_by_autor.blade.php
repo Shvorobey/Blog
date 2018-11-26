@@ -3,14 +3,14 @@
 @section('title', 'Посты автора')
 @section('content')
     <div class="col-md-8">
-        <h1 class="my-4">Все посты автора <small>{{$autor->name}}</small> </h1>
+        <h1 class="my-4" style="color:#0000CD">Все посты автора <u style="color:#006400">{{$autor->name}}</u> </h1>
 
     @foreach( $autor->posts as $post)
         <!-- Blog Post -->
             <div class="card mb-4">
                 <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
                 <div class="card-body">
-                    <h2 class="card-title">{{$post->title}}</h2>
+                    <h2 class="card-title" style="color:#ff0000">{{$post->title}}</h2>
                     <p class="card-text">{{$post->body}}</p>
                     <a href="#" class="btn btn-primary">Читать дальше &rarr;</a>
                 </div>

@@ -14,7 +14,7 @@
             <div class="card mb-4">
                 <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
                 <div class="card-body">
-                    <h2 class="card-title">{{$post->title}}</h2>
+                    <h2 class="card-title" style="color:#006400">{{$post->title}}</h2>
                     <p class="card-text">{{$post->body}}</p>
                     <a href="#" class="btn btn-primary">Читать дальше &rarr;</a>
                 </div>
@@ -57,6 +57,30 @@
                         <div>
 
                             Категории: <br> {{ $categories->show_categories() }}
+
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section ('autors')
+    <!-- Categories Widget -->
+    <div class="card my-4">
+        <h5 class="card-header">Популярные авторы</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+
+                        @inject('autors', 'App\Autors_for_sidebar')
+
+                        <div>
+
+                            {{ $autors->show_autors() }}<br>
 
                         </div>
 
