@@ -114,7 +114,7 @@
     <div class="card my-4">
         <h5 class="card-header">Рекламный блок</h5>
         <div class="card-body">
-            Покупайте наших слонов
+            <strong style="color:#ff0000"> Покупайте наших слонов </strong>
         </div>
     </div>
 @endsection
