@@ -13,4 +13,4 @@ yarn-error.log
 .env
 .phpunit.result.cache
 public/vendor/jquery
-public/vendor/bootstrap/
+public/vendor/bootstrap
