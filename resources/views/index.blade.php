@@ -47,7 +47,7 @@
 @section ('categories')
     <!-- Categories Widget -->
     <div class="card my-4">
-        <h5 class="card-header">Категории</h5>
+        <h5 class="card-header">Категории:</h5>
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-6">
@@ -57,7 +57,7 @@
 
                         <div>
 
-                            Категории: <br> {{ $categories->show_categories() }}
+                             {{ $categories->show_categories() }}<br>
 
                         </div>
 
@@ -66,7 +66,32 @@
             </div>
         </div>
     </div>
-    @endsection
+@endsection
+
+
+@section ('autors')
+    <!-- Categories Widget -->
+    <div class="card my-4">
+        <h5 class="card-header">Популярные авторы</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+
+                        @inject('autors', 'App\Autors_for_sidebar')
+
+                        <div>
+
+                             {{ $autors->show_autors() }}<br>
+
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
 
 @section ('search')
     <!-- Search Widget -->

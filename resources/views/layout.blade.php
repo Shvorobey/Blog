@@ -66,6 +66,8 @@
 
             @yield('categories')
 
+            @yield('autors')
+
             @yield('advertising')
 
 
