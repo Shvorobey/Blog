@@ -68,7 +68,6 @@
     </div>
 @endsection
 
-
 @section ('autors')
     <!-- Categories Widget -->
     <div class="card my-4">

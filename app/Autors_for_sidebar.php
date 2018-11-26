@@ -1,11 +1,13 @@
 <?php
 
-
 namespace App;
+//use Illuminate\Database\Eloquent\Model;
 
 
 class Autors_for_sidebar
+    //extends Model
 {
+
     public function show_autors()
     {
 
@@ -17,4 +19,5 @@ class Autors_for_sidebar
 
 
     }
+
 }
