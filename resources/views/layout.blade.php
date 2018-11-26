@@ -31,16 +31,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{route('main')}}">Главная
+                    <a class="nav-link" style="color:#FFB6C1" href="{{route('main')}}">Главная
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('about')}}">О нас</a>
+                    <a class="nav-link" style="color:#FFB6C1" href="{{route('about')}}">О нас</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('contact')}}">Контакты</a>
+                    <a class="nav-link" style="color:#FFB6C1" href="{{route('contact')}}">Контакты</a>
                 </li>
             </ul>
         </div>
