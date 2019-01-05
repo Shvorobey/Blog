@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
 
-    return view('index', ['posts' => \App\Post::all()]);
+    return view('index', ['posts' => \App\Post::paginate (5)]);
 })->name('main');
 
 Route::get('/about', function () {
