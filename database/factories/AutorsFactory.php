@@ -4,6 +4,6 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Autors::class, function (Faker $faker) {
     return [
-        'name' => $faker->text(15),
+        'name' => $faker->name,
     ];
 });
