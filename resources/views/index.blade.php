@@ -6,7 +6,6 @@
     <h1 class="my-4" style="color:#C71585" >Добро пожаловать <br>
         <small>Пожалуй, самый лучший в мире блог</small>
     </h1>
-
        @foreach( $posts as $post)
             <div class="card mb-4">
                    <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
@@ -28,19 +27,20 @@
         @endforeach
             <ul class="pagination justify-content-center mb-4">
                 @if ($posts->currentPage()!=1)
-                    <li><a class="page-item" href="?page=1"> Первая страница </a></li>
-                    <li><a class="page-item" href="{{$posts->previousPageUrl()}}"> < </a></li>
+                    <li class="page-item"><a class="page-link" href="?page=1"> Первая страница </a></li>
+                    <li class="page-item"><a class="page-link" href="{{$posts->previousPageUrl()}}"> < </a></li>
                 @endif
                 @if ($posts->count ()>0)
                     @for ($count=1; $count<=$posts->lastPage(); $count++)
-                        <li><a class="page-item @if ($count==$posts->currentPage()) current @endif" href="?page={{$count}}">{{$count}}</a></li>
+                        <li class="page-item @if ($count==$posts->currentPage()) active @endif" >
+                            <a class="page-link" href="?page={{$count}}"> {{$count}} </a> </li>
                     @endfor
                 @else
                     <h1> <font size="15" color="aqua" face="Arial"> Мы работаем над тем, чтобы здесь что-то появилось ;) </font> </h1>
                 @endif
                 @if ($posts->currentPage() != $posts->lastPage())
-                    <li><a class="page-item" href="{{$posts->nextPageUrl()}}"> > </a></li>
-                    <li><a class="page-item" href="?page={{$posts->lastPage()}}"> Последняя страница </a></li>
+                    <li class="page-item"><a class="page-link" href="{{$posts->nextPageUrl()}}"> > </a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{$posts->lastPage()}}"> Последняя страница </a></li>
                 @endif
             </ul>
     </div>
