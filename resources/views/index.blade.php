@@ -5,6 +5,7 @@
     <div class="col-md-8">
     <h1 class="my-4" style="color:#C71585" >Добро пожаловать <br>
         <small>Пожалуй, самый лучший в мире блог</small>
+        <script> alert('Нажмите "ОК" если Вам уже есть 18 лет') </script>
     </h1>
        @foreach( $posts as $post)
             <div class="card mb-4">
