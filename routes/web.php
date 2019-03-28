@@ -12,12 +12,10 @@
 */
 
 Route::get('/', function () {
-
     return view('index', ['posts' => \App\Post::paginate (5)]);
 })->name('main');
 
 Route::get('/about', function () {
-
     return view('about', ['page' => \App\Pages::where('key', '=', 'about')->first()]);
 })->name('about');
 
@@ -34,3 +32,7 @@ Route::get('/category/{key}', function ($key) {
     $category = \App\Categories::where('key', '=', $key)->first();
     return view('posts_by_category', ['category' => $category]);
 })->name('posts_by_category');
+
+Route::get('/summator', function () {
+    return view('summator');
+})->name('summator');

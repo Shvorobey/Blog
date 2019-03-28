@@ -42,6 +42,10 @@
                 <li class="nav-item">
                     <a class="nav-link" style="color:#FFB6C1" href="{{route('contact')}}">Контакты</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#FFB6C1" href="{{route('summator')}}">Сумматор</a>
+                </li>
             </ul>
         </div>
     </div>
