@@ -5,8 +5,9 @@
     <div class="col-md-8">
     <h1 class="my-4" style="color:#C71585" >Добро пожаловать <br>
         <small>Пожалуй, самый лучший в мире блог</small>
-        <script> alert('Нажмите "ОК" если Вам уже есть 18 лет') </script>
     </h1>
+        <script src="/js/sandbox.js">  </script>
+
        @foreach( $posts as $post)
             <div class="card mb-4">
                    <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
