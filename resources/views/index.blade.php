@@ -6,9 +6,12 @@
     <h1 class="my-4" style="color:#C71585" >Добро пожаловать <br>
         <small>Пожалуй, самый лучший в мире блог</small>
     </h1>
-        <script src="/js/sandbox.js">  </script>
+        {{--<script src="/js/sandbox.js">  </script>--}}
 
-       @foreach( $posts as $post)
+        @include ('load')
+
+
+    @foreach( $posts as $post)
             <div class="card mb-4">
                    <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
                    <div class="card-body">
